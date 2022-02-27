@@ -11,7 +11,7 @@
   - relational database보다 scalability를 더 쉽게 달성가능(large dataset, high write throughput)
   - open source software 기반이라 경제적
   - relational model에는 지원하지 않는 query operation 지원
-  - more dinamic and expressive data model
+  - more dynamic and expressive data model
 
 
 
