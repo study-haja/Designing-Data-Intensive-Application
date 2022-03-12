@@ -93,7 +93,7 @@ Graph DB는 앞서 소개한 CODASYL과는 4가지 중요한 차이점이 있다
 1. CODASYL은 특정 레코드 타입이 포함할수 있는 레코드 타입을 스키마로 정의하는 반면, Graph DB에서는 하나의 vertex는 edge를 통해서 어떠한 vertex와도 연결이 가능하다.
 2. CODASYL에서 특정 레코드에 접근하는 방법은 access path를 순회하는 방법 뿐인 반면, Graph DB에서는 unique id로 바로 특정 vertex에 접근가능하며 특정 값을 가진 vertex들을 찾기 위해서 인덱스를 사용할수도 있다.
 3. CODASYL에서 레코드의 자식을 표현할때 항상 순서를 고려해서 저장해야 하는 반면, Graph DB에서는 vertex들 간의 순서를 고려할 필요가 없다.
-4. CODASYL에서는 모든 쿼리가 imperative 한 반면, Graph DB는 imperative, declarative 쿼리 모두 지원한다.
+4. CODASYL에서는 모든 쿼리가 imperative한 반면, Graph DB는 imperative, declarative 쿼리 모두 지원한다.
 
 
 
