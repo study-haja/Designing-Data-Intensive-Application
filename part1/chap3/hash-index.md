@@ -6,7 +6,7 @@ key value쌍을 파일에 쓰고나서 key가 저장되어있는 파일의 byte 
 
 >Compaction : key의 최근 value만 남기고 나머지는 제거하는 작업
 
-compaction작업이 끝나면 예전버전의 segment 파일은 삭제하여 디스크 공간을 확복할 수 있다.
+compaction작업이 끝나면 예전버전의 segment 파일은 삭제하여 디스크 공간을 확보할 수 있다.
 
 ### 장점
 
