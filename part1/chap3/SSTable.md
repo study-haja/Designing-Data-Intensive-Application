@@ -18,6 +18,10 @@ Lucene에서 SSTable-like sorted files들을 사용하는것으로 알려져있�
 
 
 
+>  참고 : [LSM과 SSTable의 차이점](https://sjo200.tistory.com/56)
+
+
+
 ### Performance optimizations
 
 - Bloom filter라는 memory-efficient data structure를 사용해서, key가 DB에 있는지 예측할 수 있게 해준다. 따라서 불필요한 디스크 읽기를 줄일 수 있다.
