@@ -89,9 +89,10 @@
 
 - 아래처럼 Thrift와 Protocol Buffer와 달리 데이터 타입을 표시할 필요가 없어서 바이트 길이가 짧아짐![img](./img/chap4-avro-3.png)
 
-- writer schema와 reader schema는 protocol buffer,Thrift와 유사하게 달라도 상관없음. 
+- writer schema와 reader schema는 protocol buffer,Thrift와 유사하게 달라도 호환가능. 
 
   - 필드 정의 순서가 달라도 상관없음.
+  - writer schema와 reader schema를 나란히 두고 비교해서, 두 스키마의 차이를 분석
   - 데이터의 해당 필드가 없으면 디폴트 값으로 할당하고, 새로운 필드가 존재하면 무시함.
 
 - Schema Evolution도 앞의 protocol buffer, thrift와 유사하게 동작
@@ -157,3 +158,4 @@
   - 보통 RDB에서는 새로 칼럼이 추가된경우, 해당 칼럼값이 설정되지 않은 레코드들에게는 디폴트 값을 설정하도록 한다.(MySQL은 무식하게 전체 레코드들을 다시 쓴다고 함..)
   - LinkedIn의 문서디비인 Espresso의 경우 Avro 스키마를 사용하여 스키마가 변경되더라도, 데이터를 읽을때 추가된 칼럼 값이 설정이 안되어있더라도 디폴트 값으로 읽을수 있도록 한다.
 - 데이터 복제나 백업을 위해서, 디비의 스냅샷을 취하는 경우에는 최신 데이터 스키마로 데이터를 기록하고 해당 스키마가 변경될 일은 없기때문에 Avro와 같은 포맷도 좋지만 Parquet 포맷도 좋은 선택이다.
+
